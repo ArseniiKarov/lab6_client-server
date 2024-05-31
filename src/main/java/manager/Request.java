@@ -2,6 +2,7 @@ package manager;
 
 import data.Organization;
 import data.Worker;
+
 import java.io.Serial;
 import java.io.Serializable;
 
@@ -12,19 +13,16 @@ public class Request implements Serializable {
     private String message = null;
     private Worker worker = null;
     private Organization organization= null;
-    private String[] additionalData;
 
     public Request(String message, Worker worker) {
         this.message = message;
         this.worker = worker;
     }
+    public Request(String message) {
+        this.message = message;
+    }
 
-    public void setAdditionalData(String[] additionalData) {
-        this.additionalData = additionalData;
-    }
-    public String[] getAdditionalData() {
-        return additionalData;
-    }
+
     public String getMessage() {
         return message;
     }

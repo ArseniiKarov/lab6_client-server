@@ -1,7 +1,7 @@
 package data;
 
 import data.generators.IdGenerator;
-import manager.Validator;
+
 
 import java.io.Serial;
 import java.io.Serializable;
